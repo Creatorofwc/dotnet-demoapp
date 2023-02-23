@@ -15,8 +15,10 @@ variables:
 steps:
 - task: DotNetCoreCLI@2
   inputs:
-    command: restore
+    command: 'restore'
     projects: '**/*.csproj'
+    feedsToUse: 'select'
+    restoreDirectory: 'src'
 
 - task: DotNetCoreCLI@2
   inputs:
