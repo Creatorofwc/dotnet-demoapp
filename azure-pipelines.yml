@@ -16,8 +16,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    projects: '**/*.csproj'
-    feedsToUse: 'select'
+    projects: 'dotnet-demoapp.csproj'
     restoreDirectory: 'src'
 
 - task: DotNetCoreCLI@2
