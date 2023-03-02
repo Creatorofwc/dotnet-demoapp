@@ -39,4 +39,4 @@ steps:
     containerRegistry: 'braindevopstraining'
     repository: 'dotnet-demo'
     command: 'buildAndPush'
-    Dockerfile: 'Dockerfile'
+    Dockerfile: '/build/Dockerfile'
